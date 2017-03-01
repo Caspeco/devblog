@@ -1,0 +1,7 @@
+languageCode = "en-us"
+title = "Caspeco devblog"
+baseURL = "http://example.org/"
+
+theme = "hugo-dgraph-theme"
+publishDir= "docs"
+
