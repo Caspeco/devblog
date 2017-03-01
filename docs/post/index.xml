@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Caspeco devblog</title>
-    <link>http://example.org/post/index.xml</link>
+    <link>https://caspeco.github.io/devblog/post/index.xml</link>
     <description>Recent content in Posts on Caspeco devblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Mar 2017 10:38:44 +0100</lastBuildDate>
-    <atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://caspeco.github.io/devblog/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Initial Commit</title>
-      <link>http://example.org/post/good-to-great/</link>
+      <link>https://caspeco.github.io/devblog/post/good-to-great/</link>
       <pubDate>Wed, 01 Mar 2017 10:38:44 +0100</pubDate>
       
-      <guid>http://example.org/post/good-to-great/</guid>
+      <guid>https://caspeco.github.io/devblog/post/good-to-great/</guid>
       <description>&lt;p&gt;This is the first post.&lt;/p&gt;
 </description>
     </item>
