@@ -36,12 +36,12 @@
     <link rel="alternate" type="application/rss+xml" title="RSS" href="http://devs.caspeco.se/index.xml">    
 
     
-    <title>Tips &amp; Trix for Bash on Ubuntu on Windows - Caspeco devblog</title>
-    <meta property='og:title' content="Tips &amp; Trix for Bash on Ubuntu on Windows - Caspeco devblog">
+    <title>Windows $PATH and Command Line tips - Caspeco devblog</title>
+    <meta property='og:title' content="Windows $PATH and Command Line tips - Caspeco devblog">
     <meta property="og:type" content="article">
         
 
-    <meta property="og:url" content="http://devs.caspeco.se/post/bash-on-ubuntu-on-windows/">
+    <meta property="og:url" content="http://devs.caspeco.se/post/windows-paths/">
     
       
 
@@ -348,7 +348,7 @@
 
               </span>
             </div>
-            <h1 class="page-intro__title page-intro__title--blog">Tips &amp; Trix for Bash on Ubuntu on Windows</h1>
+            <h1 class="page-intro__title page-intro__title--blog">Windows $PATH and Command Line tips</h1>
           </header>
           <div class="page-intro__footer">
               <div class="share">
@@ -371,19 +371,71 @@
           
           <div class="article-content">
 
-<p>At Caspeco we do a lot of development in .NET - a platform that runs well on Windows. We also do some development that runs better in a *NIX environment.
-For example, many javascript related tools are written with a bash shell in mind. Since the Windows 10 Anniversary Update, you can run Ubuntu on the windows kernel with the WSL (Windows Subsystem for Linux).</p>
+<p>As a developer I spend quite some time in the windows command line. This is a setup I use to make life in the command line easier.</p>
 
-<ul>
-<li><a href="https://insights.ubuntu.com/2016/03/30/ubuntu-on-windows-the-ubuntu-userspace-for-windows-developers/">Announcement blog post by Ubuntu</a></li>
-<li><a href="https://channel9.msdn.com/Events/Ignite/Australia-2017/WIN321b">30 Tips and trix for WSL, Channel9</a></li>
-</ul>
+<h2 id="1-create-a-c-dev-folder-for-easy-access-to-random-tools">1. Create a C:\dev folder for easy access to random tools</h2>
 
-<h2 id="crowdsourced-tips-trix-and-guides">Crowdsourced tips, trix and guides</h2>
+<p>I keep all my small developer tools like <code>ngrok</code>, <code>git-bash</code>, <code>hugo.exe</code> and <code>set-path.ps1</code> here. So whenever you download something that&rsquo;s conveniant to have around, I put the .exe/.ps1/.bat in my <code>C:\dev</code>.</p>
 
-<p>We and the community have gathered some helpful tips to get running on this git repo: <a href="https://github.com/abergs/ubuntuonwindows">abergs/ubuntuonwindows</a>.</p>
+<h2 id="2-use-the-set-path-ps1-script">2. Use the Set-Path.ps1 script</h2>
 
-<p>It covers everything from setting up SSH to how to access your files on your windows drive and vice versa. It’s awesome.</p>
+<p>I recently wrote a nifty powershell script <em>(source below)</em> to make it easier to add things to the path while on the fly. It&rsquo;s a very useful helper for when you can&rsquo;t drop a .exe or .ps1 in the C:\dev.</p>
+
+<h4 id="usage">Usage</h4>
+
+<p>Use it to add some specific bin folder to your path, like this:</p>
+
+<pre><code>$ C:\Program Files\Redis\bin&gt;Set-Path .
+</code></pre>
+
+<p>How to install it (and do tip #1 in the same swoosh):</p>
+
+<pre><code>$ mkdir C:\dev
+$ cd C:\dev
+$ notepad Set-Path.ps1
+# Paste source, save &amp; close
+$ Set-Path .
+# ^Will add C:\dev to your path
+
+</code></pre>
+
+<h4 id="source">Source</h4>
+
+<p>This is the full source. Just copy/paste as per the instructions above</p>
+
+<pre><code>param([string] $path)
+
+# Save as Set-Path.ps1 in your C:\dev folder and then run &quot;Set-Path.ps1 .&quot; to add your C:\dev to the path.
+# Written by @andersaberg, 2017-03-01
+
+function Set-Path {
+    param([string]$newPath)
+    $envpath = $newPath
+    $envpath += &quot;;&quot; + $Env:path
+    $nl = [Environment]::NewLine
+    
+
+    Write-Output &quot;Result: $nl&quot;
+    Write-Output $envpath
+    
+    Write-Host &quot;$nl$nl + Added &quot;&quot;$newPath&quot;&quot; to the beginning of path...&quot;
+    $write = Read-Host 'Set PATH permanently ? (yes|no)'
+    if ($write -eq &quot;yes&quot;)
+    {
+        [Environment]::SetEnvironmentVariable(&quot;Path&quot;,$envpath, [System.EnvironmentVariableTarget]::User)
+        Write-Output 'PATH updated'
+    }
+}
+
+if ($path -eq &quot;&quot;) {
+    Write-Output &quot;Missing argument, path&quot;
+    Write-Output &quot;Call set-path with a folder, e.g: &quot;&quot;$ Set-Path .&quot;&quot; or &quot;&quot;$ Set-Path C:\devstuff&quot;&quot;&quot;
+} else {
+    Set-Path (Resolve-Path $path)
+}
+</code></pre>
+
+<p>Thats all for now. Happy hacking.</p>
 </div>
         </div>
       </div>
@@ -440,7 +492,7 @@ For example, many javascript related tools are written with a bash shell in mind
           <nav class="page-footer-nav">
             <h6 class="page-footer-nav__title">Community</h6>
             <ul class="page-footer-nav__list">
-              <li class="page-footer-nav__item"><a href="http://devs.caspeco.se/post/bash-on-ubuntu-on-windows/" title="Our thoughts" target="_blank" class="page-footer-nav__link">Blog</a></li>
+              <li class="page-footer-nav__item"><a href="http://devs.caspeco.se/post/windows-paths/" title="Our thoughts" target="_blank" class="page-footer-nav__link">Blog</a></li>
               
               
               
