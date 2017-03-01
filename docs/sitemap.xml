@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://devs.caspeco.se/post/bash-on-ubuntu-on-windows/</loc>
+    <lastmod>2017-03-01T16:15:37+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://devs.caspeco.se/post/debug-using-git-bisect/</loc>
     <lastmod>2017-03-01T16:02:24+01:00</lastmod>
   </url>
@@ -13,13 +18,13 @@
   
   <url>
     <loc>http://devs.caspeco.se/</loc>
-    <lastmod>2017-03-01T16:02:24+01:00</lastmod>
+    <lastmod>2017-03-01T16:15:37+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://devs.caspeco.se/post/</loc>
-    <lastmod>2017-03-01T16:02:24+01:00</lastmod>
+    <lastmod>2017-03-01T16:15:37+01:00</lastmod>
     <priority>0</priority>
   </url>
   

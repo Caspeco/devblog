@@ -6,8 +6,25 @@
     <description>Recent content in Posts on Caspeco devblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Mar 2017 16:02:24 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 01 Mar 2017 16:15:37 +0100</lastBuildDate>
     <atom:link href="http://devs.caspeco.se/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Tips &amp; Trix for Bash on Ubuntu on Windows</title>
+      <link>http://devs.caspeco.se/post/bash-on-ubuntu-on-windows/</link>
+      <pubDate>Wed, 01 Mar 2017 16:15:37 +0100</pubDate>
+      
+      <guid>http://devs.caspeco.se/post/bash-on-ubuntu-on-windows/</guid>
+      <description>&lt;p&gt;At Caspeco we do a lot of development in .NET - a platform that runs well on Windows. We also do some development that runs better in a *NIX environment.
+For example, many javascript related tools are written with a bash shell in mind. Since the Windows 10 Anniversary Update, you can run Ubuntu on the windows kernel.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Todo - add helpful links here&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;We and the community have gathered some helpful tips to get running on this git repo: &lt;a href=&#34;https://github.com/abergs/ubuntuonwindows&#34;&gt;abergs/ubuntuonwindows&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It covers everything from setting up SSH to how to access your files on your windows drive and vice versa. It’s awesome.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>How we debug using git bisect at Caspeco</title>
