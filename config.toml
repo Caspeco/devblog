@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "Caspeco devblog"
-baseURL = "http://devs.caspeco.se"
+baseURL = "http://devs.caspeco.se/"
 
 theme = "hugo-dgraph-theme"
 publishDir= "docs"
