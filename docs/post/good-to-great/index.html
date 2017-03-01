@@ -369,7 +369,24 @@
         <div class="col-12 col-desktop-10 push-desktop-1 col-hd-8 push-hd-2">
 
           
-          <div class="article-content"><p>This is the first post.</p>
+          <div class="article-content"><p>This is the first post. And it will just show off how our blog works.
+Man kan tycka det</p>
+
+<p>Det krävs en hel del text för att putta ned en react komponent.</p>
+
+<pre><code>class Component extends React.Component&lt;IComponentProps, IComponentState&gt; {
+    fieldSetChangeHandler() {
+       // När fieldSetChangeHandler anropas vid onChange så är this inte bundet till denna instans av Component... Raden nedan ger exception eftersom this-objektet inte har state...
+       if (this.state.employee.name === &quot;&quot;) {}
+    }
+    render() {
+        // När this.fieldSetChangeHandler anropas binds inte this till en instans av Component(!)
+        return &lt;ui.FieldSet onChange={this.fieldSetChangeHandler}&gt;;
+    }
+}
+</code></pre>
+
+<p><strong>Nam</strong> a nibh eget ligula <em>dapibus</em> laoreet. ~In~ eros nisi, lacinia lacinia blandit non, egestas eu orci. Pellentesque congue urna quis nibh consectetur dapibus. Aliquam sollicitudin sem enim, eu imperdiet mi posuere in. Donec quis convallis quam, ac tincidunt tortor. Pellentesque euismod condimentum pretium. Proin ut porta mi. Vivamus vel tellus quis quam lobortis congue ut vel massa. Maecenas eget placerat nisi. Aenean ultrices tellus ac lorem ultricies dapibus. Etiam id lectus consequat, varius lacus venenatis, rhoncus risus. Ut pellentesque ligula vitae eros dictum rutrum. Nulla eu lacus eu ante imperdiet hendrerit et sed nisl. Praesent ut commodo eros.</p>
 </div>
         </div>
       </div>
