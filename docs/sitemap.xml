@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://caspeco.github.io/devblog/post/good-to-great/</loc>
+    <loc>http://devs.caspeco.se/post/good-to-great/</loc>
     <lastmod>2017-03-01T10:38:44+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://caspeco.github.io/devblog/</loc>
+    <loc>http://devs.caspeco.se/</loc>
     <lastmod>2017-03-01T10:38:44+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://caspeco.github.io/devblog/post/</loc>
+    <loc>http://devs.caspeco.se/post/</loc>
     <lastmod>2017-03-01T10:38:44+01:00</lastmod>
     <priority>0</priority>
   </url>
