@@ -1,0 +1,49 @@
+{{if eq .user "anders" }}
+<nav class="social__nav article-author__social">
+    <ul class="social__list social__list--inline">
+        <li class="social__item social__item--inline">
+            <a href="https://au.linkedin.com/in/abergs" class="social__link">
+                <svg class="icon social__icon social__icon--linkedin">
+                    <use xlink:href="#icon-linkedin" xmlns:xlink="https://www.w3.org/1999/xlink"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="social__item social__item--inline">
+            <a href="https://twitter.com/andersaberg" class="social__link">
+                <svg class="icon social__icon social__icon--twitter">
+                    <use xlink:href="#icon-twitter" xmlns:xlink="https://www.w3.org/1999/xlink"></use>
+                </svg>
+            </a>
+        </li>        
+    </ul>
+</nav>
+<p>I'm diabetic. And a developer. And a ... I love to build and learn, in that order.</p>
+
+{{ else if eq .user "jocke" }}
+<nav class="social__nav article-author__social">
+    <ul class="social__list social__list--inline">
+        <li class="social__item social__item--inline">
+            <a href="https://www.linkedin.com/molly" class="social__link">
+                <svg class="icon social__icon social__icon--linkedin">
+                    <use xlink:href="#icon-linkedin" xmlns:xlink="https://www.w3.org/1999/xlink"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="social__item social__item--inline">
+            <a href="https://twitter.com/GrahamMooly" class="social__link">
+                <svg class="icon social__icon social__icon--twitter">
+                    <use xlink:href="#icon-twitter" xmlns:xlink="https://www.w3.org/1999/xlink"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</nav>
+<p> I'm Molly Graham, a web developer working in NYC. Plain and simple, I love programming. I'm passionate about writing clean, unique, elegant code. Codes that work.</p>
+
+{{ else if eq .user "" }}
+<nav class="social__nav article-author__social">
+    <ul class="social__list social__list--inline">        
+    </ul>
+</nav>
+<p> $ :(){:|:&};: // the forkbomb</p>
+{{end}}

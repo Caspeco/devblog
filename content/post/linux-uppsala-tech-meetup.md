@@ -2,7 +2,8 @@
 date = "2017-03-01T18:28:47+01:00"
 title = "Upcoming: Uppsala Tech Meetup, #16 Linux"
 draft = false
-
+author = ["anders"]
+editor = []
 +++
 
 

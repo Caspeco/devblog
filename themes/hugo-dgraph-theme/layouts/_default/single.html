@@ -312,8 +312,12 @@
           <div class="container">
             <div class="row">
               <div class="col-12 col-desktop-10 push-desktop-1 col-hd-8 push-hd-2">
-              {{ partial "author_profile.html" .}}
-              {{ partial "editor_profile.html" .}}
+                    {{ range .Params.author }}
+                      {{ partial "author_profile.html" .}}
+                    {{ end }}
+                    {{ range .Params.editor }}
+                      {{ partial "editor_profile.html" .}}
+                    {{ end }}                    
               </div>
             </div>
           </div>

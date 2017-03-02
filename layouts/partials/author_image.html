@@ -1,0 +1,7 @@
+{{if eq .user "anders" }}
+	<img src="/images/anders.jpg" class="article-author__image">
+{{else if eq .user ""}}
+    <img src="/images/avatar.png" class="article-author__image">
+{{else if eq .user "jocke"}}
+	<img src="/images/anders.jpg" class="article-author__image">
+{{end}}
