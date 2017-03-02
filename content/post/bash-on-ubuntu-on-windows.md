@@ -2,7 +2,8 @@
 date = "2017-03-01T16:15:37+01:00"
 title = "Tips & Trix for Bash on Ubuntu on Windows"
 draft = false
-
+author = ["anders"]
+editor = []
 +++
 
 At Caspeco we do a lot of development in .NET - a platform that runs well on Windows. We also do some development that runs better in a *NIX environment.

@@ -2,7 +2,8 @@
 date = "2017-03-01T17:41:27+01:00"
 title = "Windows $PATH and Command Line tips"
 draft = false
-
+author = ["anders"]
+editor = []
 +++
 
 As a developer I spend quite some time in the windows command line. This is a setup I use to make life in the command line easier.
