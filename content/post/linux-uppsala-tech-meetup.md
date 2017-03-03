@@ -9,7 +9,7 @@ editor = [""]
 
 
 We have the pleasure to host the **Uppsala Tech Meetup** at the Caspeco Office, Tuesday, March 7, 2017
-6:30 PM... We're located at [Dragarbrunnsgatan 50A, Uppsala](https://maps.google.com/maps?f=q&hl=en&q=Dragarbrunnsgatan+50A%2C+Uppsala%2C+se)
+6:30 PM. We're located at [Dragarbrunnsgatan 50A, Uppsala](https://maps.google.com/maps?f=q&hl=en&q=Dragarbrunnsgatan+50A%2C+Uppsala%2C+se)
 
 As a .NET shop we're looking forward to learn a bunch about Linux and we're especially excited to have people from Microsoft coming over and sharing their thoughts on Linux.
 
