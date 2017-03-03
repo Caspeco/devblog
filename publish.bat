@@ -1,4 +1,11 @@
 @echo OFF
+
+git status -s | find /i "M"
+if errorlevel 1 (
+    echo "Please commit working changes first"
+    exit
+)
+
 echo "Deleting old publication"
 rd /s /q public
 mkdir public
