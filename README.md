@@ -40,5 +40,5 @@ Run `hugo.exe serve --buildDrafts` to **preview** the blog (with drafts) on `htt
 When you're satisfied with the result you can **publish by running** `.\publish.bat`. This will publish the generated html files to the gh-pages branch which will be served from http://devs.caspeco.se
 
 
-## Feel free to hack to html & css
+## Feel free to hack the html & css
 You're invited to improve the blogs html & css which are mainly located in the `/themes/hugo-dgraph-theme`-folder.
