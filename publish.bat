@@ -1,10 +1,7 @@
 @echo OFF
 
 git status -s | find /i "M"
-if %errorlevel% equ 1 (
-    echo "Please commit working changes first"
-    exit
-)
+if %ERRORLEVEL% == 0 goto error
 
 echo "Deleting old publication"
 rd /s /q public
@@ -24,3 +21,9 @@ hugo
 echo "Updating gh-pages branch"
 @echo devs.caspeco.se > public/CNAME
 cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)" && git push origin gh-pages
+goto done
+
+:error
+echo "Please commit working changes first"
+goto done
+:done
