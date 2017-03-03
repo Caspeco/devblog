@@ -3,7 +3,6 @@ title = "Caspeco devblog"
 baseURL = "http://devs.caspeco.se/"
 
 theme = "hugo-dgraph-theme"
-publishDir= "docs"
 
 [params]
     website = "http://www.caspeco.se"
