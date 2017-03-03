@@ -2,7 +2,7 @@
 title = "Initial Commit"
 draft = true
 date = "2017-03-01T10:38:44+01:00"
-
+author = ["anders"]
 +++
 
 This is the first post. And it will just show off how our blog works.
