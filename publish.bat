@@ -10,7 +10,7 @@ echo "Deleting old publication"
 rd /s /q public
 mkdir public
 git worktree prune
-rd /s /q ".git/worktrees/public"
+rd /s /q .git/worktrees/public
 
 echo "Checking out gh-pages branch into public"
 git worktree add -B gh-pages public origin/gh-pages
