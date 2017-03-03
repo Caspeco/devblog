@@ -1,7 +1,7 @@
 @echo OFF
 
 git status -s | find /i "M"
-if errorlevel 1 (
+if %errorlevel% equ 1 (
     echo "Please commit working changes first"
     exit
 )
