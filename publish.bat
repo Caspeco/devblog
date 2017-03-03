@@ -2,6 +2,10 @@
 
 git status -s | find /i "M"
 if %ERRORLEVEL% == 0 goto error
+git status -s | find /i "D"
+if %ERRORLEVEL% == 0 goto error
+git status -s | find /i "A"
+if %ERRORLEVEL% == 0 goto error
 
 echo "Deleting old publication"
 rd /s /q public
