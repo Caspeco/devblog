@@ -1,4 +1,4 @@
-
+@echo OFF
 echo "Deleting old publication"
 rd /s /q public
 mkdir public
@@ -9,7 +9,7 @@ echo "Checking out gh-pages branch into public"
 git worktree add -B gh-pages public origin/gh-pages
 
 echo "Removing existing files"
-rd /s /q public\*
+rd /s /q public
 
 echo "Generating site"
 hugo
