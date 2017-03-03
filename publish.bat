@@ -15,7 +15,7 @@ echo "Generating site"
 hugo
 
 echo "Updating gh-pages branch"
-@echo devs.caspeco.se > CNAME
+@echo devs.caspeco.se > publish/CNAME
 cd public
 pwd
 git add --all && git commit -m "Publishing to gh-pages (publish.sh)" && git push origin gh-pages
