@@ -6,8 +6,112 @@
     <description>Recent content in Posts on Caspeco devblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Mar 2017 18:28:47 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 15 Mar 2017 13:41:12 +0100</lastBuildDate>
     <atom:link href="http://devs.caspeco.se/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Visual Studio 2017</title>
+      <link>http://devs.caspeco.se/post/vs-2017/</link>
+      <pubDate>Wed, 15 Mar 2017 13:41:12 +0100</pubDate>
+      
+      <guid>http://devs.caspeco.se/post/vs-2017/</guid>
+      <description>
+
+&lt;p&gt;Visual Studio 2017 was recently released and this is quick overview of my favorite features and how you can get started!&lt;/p&gt;
+
+&lt;p&gt;First of all, start by &lt;a href=&#34;https://www.visualstudio.com/&#34;&gt;downloading Visual Studio&lt;/a&gt;. At Caspeco we use the Enterprise version because we are Microsoft Partners, but you can also download the free Community edition. The installation took quite some time on my laptop but you can pick which parts of the IDE you want (Web developement, SQL and Xamarin support etc) which will speed it up.&lt;/p&gt;
+
+&lt;h2 id=&#34;overall-impressive&#34;&gt;Overall impressive&lt;/h2&gt;
+
+&lt;p&gt;There is a ton of new features and performance boosts in VS2017. As of this time, &lt;strong&gt;I don&amp;rsquo;t see the need to use the ReSharper plugin&lt;/strong&gt; because of the good built in refactoring and code navigation tools.
+Read the &lt;a href=&#34;https://blogs.msdn.microsoft.com/visualstudio/2017/03/08/optimize-your-productivity-with-net-in-visual-studio-2017-2/&#34;&gt;official Microsoft blog post&lt;/a&gt; for a more complete announcement.&lt;/p&gt;
+
+&lt;h2 id=&#34;my-favorite-picks&#34;&gt;My favorite picks&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ve picked out some features I really like, but feel free to add yours by editing this post.&lt;/p&gt;
+
+&lt;h3 id=&#34;live-unit-tests&#34;&gt;Live unit tests&lt;/h3&gt;
+
+&lt;p&gt;In Visual Studio Enterprise you can enable Live Testing. This means quite a few things.
+It will run your unit tests as you edit your code. It&amp;rsquo;s smart enough to only run the tests affected by the code your editing.&lt;br /&gt;
+Here&amp;rsquo;s how to enable it:
+&lt;img src=&#34;http://devs.caspeco.se/images/vs2017live.PNG&#34; alt=&#34;Enable VS Live Testing&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It also shows if affected tests are passing right along your code. No need to pause your coding to run tests and look at the test result in a different (and often dissapearing window).
+&lt;img src=&#34;http://devs.caspeco.se/images/vs2017live2.PNG&#34; alt=&#34;VS Live Testing Preview&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;All in all, it makes the development cycle tighter, which gives me more time to work on the code and less on the tools.&lt;/p&gt;
+
+&lt;h3 id=&#34;nullexception-now-shows-what-s-null&#34;&gt;NullException now shows what&amp;rsquo;s null&lt;/h3&gt;
+
+&lt;p&gt;Previousley it would just say that &amp;ldquo;something is null, buddy!&amp;rdquo;. Now it will actually tell you what is null. &lt;em&gt;Fiiiiinnally&lt;/em&gt;.
+&lt;img src=&#34;http://devs.caspeco.se/images/vs2017null.png&#34; alt=&#34;NullExceptions&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;structured-syntax-colored-find-all-references&#34;&gt;Structured &amp;amp; syntax colored &amp;ldquo;Find all references&amp;rdquo;&lt;/h3&gt;
+
+&lt;p&gt;Find all references previousley looked a bit like notepad, which made it difficult to find what you were looking for. The new and improved version structures the results and adds syntax highlighting.
+&lt;img src=&#34;http://devs.caspeco.se/images/vs2017findall.PNG&#34; alt=&#34;Find all references&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;intellisense-is-improved&#34;&gt;Intellisense is improved&lt;/h3&gt;
+
+&lt;p&gt;Intellisense added both &lt;strong&gt;filtering&lt;/strong&gt; &amp;amp; &lt;strong&gt;CamelCase&lt;/strong&gt; matching.&lt;/p&gt;
+
+&lt;p&gt;Filterings allows you to only show classes, members, interfaces and so on by toggling buttons or by using the keyboard shortcuts:
+&lt;img src=&#34;http://devs.caspeco.se/images/vs2017intellisense.PNG&#34; alt=&#34;Improved intellisense&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Keyboard shortcuts (notice the pattern):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Classes Alt+C&lt;/li&gt;
+&lt;li&gt;Interfaces Alt+I&lt;/li&gt;
+&lt;li&gt;Enums Alt+E&lt;/li&gt;
+&lt;li&gt;Structures Alt+S&lt;/li&gt;
+&lt;li&gt;Delegates Alt+D&lt;/li&gt;
+&lt;li&gt;Keywords Alt+K&lt;/li&gt;
+&lt;li&gt;Namespaces Alt+N&lt;/li&gt;
+&lt;li&gt;Snippets Alt+S&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;CamelCase matching allows you quickmatch and expand long class names.
+Instead of writing &lt;code&gt;DictionaryException&lt;/code&gt; you can type &lt;code&gt;DicE&lt;/code&gt; and get a match.&lt;/p&gt;
+
+&lt;h3 id=&#34;refactoring&#34;&gt;Refactoring&lt;/h3&gt;
+
+&lt;p&gt;Refactorings – use &lt;code&gt;Ctrl+.&lt;/code&gt; or &lt;code&gt;Alt+Enter&lt;/code&gt;to access all the &lt;a href=&#34;https://docs.microsoft.com/en-us/visualstudio/csharp-ide/refactoring-csharp&#34;&gt;refactorings&lt;/a&gt; and quick actions added in VS. Here is an overview:
+* Move type to file with same name
+* Sync file and type name
+* Add missing switch/Select case
+* Make method synchronous
+* Convert method to property, and vice versa
+* Convert to interpolated string&lt;/p&gt;
+
+&lt;h3 id=&#34;go-to&#34;&gt;Go To&lt;/h3&gt;
+
+&lt;p&gt;Use &lt;code&gt;Ctrl+T&lt;/code&gt; or &lt;code&gt;Ctrl+,&lt;/code&gt; to use the new Go To feature. Here&amp;rsquo;s what microsoft says:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Go To Implementation (Ctrl+F12) – navigate from any base type or member to its various implementations.&lt;/li&gt;
+&lt;li&gt;Go To All (Ctrl+T or Ctrl+,) – navigate directly to any file/type/member/symbol declaration. You can use the icons along the top of the feature to filter your result list or use the query syntax (e.g., “f searchTerm” for files, “t searchTerm” for types, etc.).&lt;/li&gt;
+&lt;li&gt;Find All References (Shift+F12) – now with syntax colorization, Find All Reference results can be custom grouped by a combination of project, definition, and path. You can also “lock” results so  that you can continue to find other references without losing your original results.&lt;/li&gt;
+&lt;li&gt;Indent Guides ­– dotted, gray vertical lines act as landmarks in code to provide context within your frame of view. You may recognize these from the popular Productivity Power Tools.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Make notice of the prefix filter (m &amp;ldquo;foo&amp;rdquo; or &amp;ldquo;t bar&amp;rdquo;) to quickly filter out classes/members etc.&lt;/p&gt;
+
+&lt;h3 id=&#34;hints&#34;&gt;Hints&lt;/h3&gt;
+
+&lt;p&gt;Use &lt;code&gt;Alt+Enter&lt;/code&gt; or &lt;code&gt;Ctrl+.&lt;/code&gt; to autofix code standards and explore suggestions, warnings and errors.&lt;/p&gt;
+
+&lt;p&gt;You can also configure code standards (similiar to eshint, tshint, FxCop) in the new &lt;code&gt;.editorconfig&lt;/code&gt; file. Powertip is to use Mads Kristensen VS extension for this file format.&lt;/p&gt;
+
+&lt;h2 id=&#34;last-thoughts&#34;&gt;Last thoughts&lt;/h2&gt;
+
+&lt;p&gt;Solid update. I like it.
+We had to upgrade our Antlr package in order to build. But that was the only thing not working in the upgrade.&lt;/p&gt;
+
+&lt;p&gt;Happy Coding!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Upcoming: Uppsala Tech Meetup, #16 Linux</title>
